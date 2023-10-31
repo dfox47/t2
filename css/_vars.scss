@@ -1,12 +1,38 @@
+$i:                     '/i';
+$icons:                 $i + '/icons';
+
+// colors
+$c_type_4:          #454c63;
+
+$transition:        all .3s ease-in-out;
+
+// @medias
+$desktop:       'only screen and (max-width: 1279px)';
+$mobile:        'only screen and (max-width: 767px)';
+$mobile_s:      'only screen and (max-width: 480px)';
+$tablet:        'only screen and (max-width: 1023px)';
+
+// fonts
+$font_main: 'PT Mono', Arial, Helvetica, sans-serif;
+
 @font-face {
 	font-family: 'PT Mono';
-	src: local('PT Mono'), local('PTMono-Regular'), url('ptmono.woff2') format('woff2'), url('ptmono.woff') format('woff'), url('ptmono.ttf') format('truetype');
+	src: local('PT Mono'),
+	local('PTMono-Regular'),
+	url('../fonts/ptmono.woff2') format('woff2'),
+	url('../fontsptmono.woff') format('woff'),
+	url('../fontsptmono.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'PT Mono';
-	src: local('PT Mono Bold'), local('PTMono-Bold'), url('ptmonobold.woff2') format('woff2'), url('ptmonobold.woff') format('woff'), url('ptmonobold.ttf') format('truetype');
+	src: local('PT Mono Bold'),
+	local('PTMono-Bold'),
+	url('../fontsptmonobold.woff2') format('woff2'),
+	url('../fontsptmonobold.woff') format('woff'),
+	url('../fontsptmonobold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
