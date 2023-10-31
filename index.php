@@ -1,5 +1,8 @@
 <!doctype html>
 
+<?php $i = 'i';
+$icons = $i . '/icons'; ?>
+
 <html lang="en">
 
 <head>
@@ -52,40 +55,52 @@
 			</div>
 
 			<div class="options_list">
-				<label class="options_item">
+				<label class="options_list__item">
 					<input type="radio" name="server_type">
-					<span class="options_item__img js-img-scroll" data-src=""></span>
-					<span class="options_item__desc">Для 1С</span>
+					<span class="options_list__content">
+						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/1c.svg"></span>
+						<span class="options_list__desc">Для 1С</span>
+					</span>
 				</label>
 
-				<label class="options_item">
+				<label class="options_list__item">
 					<input type="radio" name="server_type">
-					<span class="options_item__img js-img-scroll" data-src=""></span>
-					<span class="options_item__desc">Для офиса</span>
+					<span class="options_list__content">
+						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/office.svg"></span>
+						<span class="options_list__desc">Для офиса</span>
+					</span>
 				</label>
 
-				<label class="options_item">
+				<label class="options_list__item">
 					<input type="radio" name="server_type">
-					<span class="options_item__img js-img-scroll" data-src=""></span>
-					<span class="options_item__desc">Файловый</span>
+					<span class="options_list__content">
+						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/file.svg"></span>
+						<span class="options_list__desc">Файловый</span>
+					</span>
 				</label>
 
-				<label class="options_item">
+				<label class="options_list__item">
 					<input type="radio" name="server_type">
-					<span class="options_item__img js-img-scroll" data-src=""></span>
-					<span class="options_item__desc">Для виртуализации</span>
+					<span class="options_list__content">
+						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/virtualization.svg"></span>
+						<span class="options_list__desc">Для виртуализации</span>
+					</span>
 				</label>
 
-				<label class="options_item">
+				<label class="options_list__item">
 					<input type="radio" name="server_type">
-					<span class="options_item__img js-img-scroll" data-src=""></span>
-					<span class="options_item__desc">Контроллер домена</span>
+					<span class="options_list__content">
+						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/domen.svg"></span>
+						<span class="options_list__desc">Контроллер домена</span>
+					</span>
 				</label>
 
-				<label class="options_item">
+				<label class="options_list__item">
 					<input type="radio" name="server_type">
-					<span class="options_item__img js-img-scroll" data-src=""></span>
-					<span class="options_item__desc">Для хостинга</span>
+					<span class="options_list__content">
+						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/hosting.svg"></span>
+						<span class="options_list__desc">Для хостинга</span>
+					</span>
 				</label>
 			</div>
 
