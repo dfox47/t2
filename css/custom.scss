@@ -30,8 +30,15 @@ body {
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
+	position: relative;
 
 	&__bg {
+	}
+
+	&__content {
+		color: #fff;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__desc {
@@ -39,7 +46,9 @@ body {
 		font-weight: 700;
 		letter-spacing: 0;
 		line-height: 40px;
+		max-width: 600px;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 	&__more {
@@ -47,9 +56,18 @@ body {
 	}
 
 	&__title {
+		font-size: 75px;
+		font-weight: 400;
+		letter-spacing: -.01em;
+		line-height: 1.12;
+		text-align: center;
 	}
 }
 
 .logo {
-	margin: 0 auto;
+	left: 50%;
+	position: absolute;
+	top: 30px;
+	transform: translateX(-50%);
+	z-index: 7;
 }

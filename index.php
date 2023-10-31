@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" href="styles.min.css?v<?= (date("YmdHis")); ?>">
 
-	<title>Serves</title>
+	<title>Servs</title>
 </head>
 
 <body>
@@ -23,10 +23,10 @@
 		<h1 class="hero__title">SERVS</h1>
 
 		<div class="hero__desc">флагманский поставщик серверов и комплектующих в России</div>
-	</div>
 
-	<div class="hero__more">
-		<button class="btn btn--primary">Смотреть каталог</button>
+		<div class="hero__more">
+			<button class="btn btn--primary">Смотреть каталог</button>
+		</div>
 	</div>
 </div>
 
