@@ -1,0 +1,50 @@
+.hero {
+	align-items: flex-end;
+	background: linear-gradient(to top, rgba($c_gradient, 0) 0%, $c_gradient 100%);
+	display: flex;
+	justify-content: center;
+	min-height: 762px;
+	padding: 0 0 80px;
+	position: relative;
+
+	&__bg {
+		height: 100%;
+		left: 0;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__content {
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__desc {
+		font-size: 32px;
+		font-weight: 700;
+		letter-spacing: 0;
+		line-height: 40px;
+		max-width: 600px;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 30px;
+	}
+
+	&__more {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 75px;
+		font-weight: 400;
+		letter-spacing: -.01em;
+		line-height: 1.12;
+		text-align: center;
+	}
+}

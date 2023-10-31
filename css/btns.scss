@@ -1,0 +1,21 @@
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: $transition;
+
+	&--primary {
+		background-color: $c_primary;
+		border-radius: 5px;
+		color: #fff;
+		font-family: $font_roboto;
+		font-size: 20px;
+		line-height: 1;
+		padding: 18px 24px;
+
+		&:hover {
+			background-color: #fff;
+			color: $c_primary;
+		}
+	}
+}
