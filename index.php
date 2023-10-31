@@ -17,9 +17,9 @@
 <div class="hero">
 	<span class="logo js-img-scroll" data-src="i/logo.svg"></span>
 
-	<video class="hero__bg" playsinline autoplay muted loop>
-		<source src="i/bg.mp4" type="video/mp4">
-	</video>
+	<!--	<video class="hero__bg" playsinline autoplay muted loop>-->
+	<!--		<source src="i/bg.mp4" type="video/mp4">-->
+	<!--	</video>-->
 
 	<div class="hero__content">
 		<h1 class="hero__title">SERVS</h1>
@@ -31,6 +31,14 @@
 		</div>
 	</div>
 </div>
+
+<section class="config_title">
+	<div class="wrapper">
+		<h2>Конфигуратор сервера</h2>
+
+		<hr>
+	</div>
+</section>
 
 <script src="all.min.js?v<?= (date("YmdHis")); ?>"></script>
 </body>

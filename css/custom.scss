@@ -1,6 +1,19 @@
 body {
+	background-color: $c_bg;
 	font-family: $font_main;
 	min-height: 2000px;
+}
+
+hr {
+	background-color: rgba(#fff, .1);
+	border: 0 none;
+	height: 1px;
+	width: 100%;
+}
+
+.config_title {
+	color: #fff;
+	padding: 80px 0 0;
 }
 
 .logo {
@@ -9,4 +22,11 @@ body {
 	top: 30px;
 	transform: translateX(-50%);
 	z-index: 7;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 907px;
+	padding: 0 30px;
+	width: 100%;
 }
