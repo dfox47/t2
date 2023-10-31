@@ -8,6 +8,7 @@ hr {
 	background-color: rgba(#fff, .1);
 	border: 0 none;
 	height: 1px;
+	margin: 50px auto;
 	width: 100%;
 }
 
@@ -22,6 +23,49 @@ hr {
 	top: 30px;
 	transform: translateX(-50%);
 	z-index: 7;
+}
+
+.options_item {
+	align-items: center;
+	backdrop-filter: blur(4.5px);
+	background: rgba(#fff, .05);
+	border-radius: 8px;
+	border: 1px solid rgba(#fff, .2);
+	display: flex;
+	height: 60px;
+	padding: 10px;
+	width: 270px;
+
+	&__desc {
+		color: #fff;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	&__img {
+		background: rgba(#fff, 0.05);
+		border-radius: 5px;
+		height: 40px;
+		margin: 0 14px 0 0;
+		width: 40px;
+	}
+}
+
+.options_list {
+	display: flex;
+	gap: 18px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.options_toggle {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 50px;
+
+	&__title {
+		margin: 0 0 0 20px;
+	}
 }
 
 .wrapper {

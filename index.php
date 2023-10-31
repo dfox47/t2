@@ -40,6 +40,60 @@
 	</div>
 </section>
 
+<section>
+	<form class="options_form js-form" action="/" method="post">
+		<div class="wrapper">
+			<div class="options_wrapper">
+				<div class="options_toggle">
+					<button class="btn btn--toggle js-options-toggle" data-id="1"></button>
+
+					<h3 class="options_toggle__title js-options-toggle" data-id="1">Выбор сервера под задачу</h3>
+				</div>
+			</div>
+
+			<div class="options_list">
+				<label class="options_item">
+					<input type="radio" name="server_type">
+					<span class="options_item__img js-img-scroll" data-src=""></span>
+					<span class="options_item__desc">Для 1С</span>
+				</label>
+
+				<label class="options_item">
+					<input type="radio" name="server_type">
+					<span class="options_item__img js-img-scroll" data-src=""></span>
+					<span class="options_item__desc">Для офиса</span>
+				</label>
+
+				<label class="options_item">
+					<input type="radio" name="server_type">
+					<span class="options_item__img js-img-scroll" data-src=""></span>
+					<span class="options_item__desc">Файловый</span>
+				</label>
+
+				<label class="options_item">
+					<input type="radio" name="server_type">
+					<span class="options_item__img js-img-scroll" data-src=""></span>
+					<span class="options_item__desc">Для виртуализации</span>
+				</label>
+
+				<label class="options_item">
+					<input type="radio" name="server_type">
+					<span class="options_item__img js-img-scroll" data-src=""></span>
+					<span class="options_item__desc">Контроллер домена</span>
+				</label>
+
+				<label class="options_item">
+					<input type="radio" name="server_type">
+					<span class="options_item__img js-img-scroll" data-src=""></span>
+					<span class="options_item__desc">Для хостинга</span>
+				</label>
+			</div>
+
+			<hr>
+		</div>
+	</form>
+</section>
+
 <script src="all.min.js?v<?= (date("YmdHis")); ?>"></script>
 </body>
 </html>

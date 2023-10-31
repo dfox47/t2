@@ -18,4 +18,35 @@
 			color: $c_primary;
 		}
 	}
+
+	&--toggle {
+		background-color: rgba(#fff, .05);
+		border-radius: 5px;
+		height: 40px;
+		width: 40px;
+
+		&::after,
+		&::before {
+			background-color: #fff;
+			content: "";
+			height: 1px;
+			position: absolute;
+			top: 20px;
+			width: 12px;
+		}
+
+		&::after {
+			left: 18px;
+			transform: rotate(40deg);
+		}
+
+		&::before {
+			left: 9px;
+			transform: rotate(-40deg);
+		}
+
+		&.active {
+			transform: rotate(180deg);
+		}
+	}
 }
