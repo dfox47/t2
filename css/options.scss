@@ -1,3 +1,10 @@
+.options_content {
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+	transition: all .5s ease-in-out;
+}
+
 .options_list {
 	display: flex;
 	gap: 18px;
@@ -71,6 +78,10 @@
 
 .options_wrapper {
 	&.active {
+		.options_content {
+			max-height: 1000px;
+		}
+
 		.options_toggle {
 			.btn--toggle {
 				transform: rotate(180deg);
