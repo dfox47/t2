@@ -44,69 +44,81 @@ $icons = $i . '/icons'; ?>
 </section>
 
 <section>
-	<form class="options_form js-form" action="/" method="post">
-		<div class="wrapper">
-			<div class="options_wrapper">
+	<div class="wrapper">
+		<form class="options_form js-form" action="/" method="post">
+			<div class="options_wrapper js-options-block" data-id="1">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="1"></button>
 
 					<h3 class="options_toggle__title js-options-toggle" data-id="1">Выбор сервера под задачу</h3>
 				</div>
-			</div>
 
-			<div class="options_list">
-				<label class="options_list__item">
-					<input type="radio" name="server_type">
-					<span class="options_list__content">
+				<div class="options_content">
+					<div class="options_list">
+						<label class="options_list__item">
+							<input type="radio" name="server_type">
+							<span class="options_list__content">
 						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/1c.svg"></span>
 						<span class="options_list__desc">Для 1С</span>
 					</span>
-				</label>
+						</label>
 
-				<label class="options_list__item">
-					<input type="radio" name="server_type">
-					<span class="options_list__content">
+						<label class="options_list__item">
+							<input type="radio" name="server_type">
+							<span class="options_list__content">
 						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/office.svg"></span>
 						<span class="options_list__desc">Для офиса</span>
 					</span>
-				</label>
+						</label>
 
-				<label class="options_list__item">
-					<input type="radio" name="server_type">
-					<span class="options_list__content">
+						<label class="options_list__item">
+							<input type="radio" name="server_type">
+							<span class="options_list__content">
 						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/file.svg"></span>
 						<span class="options_list__desc">Файловый</span>
 					</span>
-				</label>
+						</label>
 
-				<label class="options_list__item">
-					<input type="radio" name="server_type">
-					<span class="options_list__content">
+						<label class="options_list__item">
+							<input type="radio" name="server_type">
+							<span class="options_list__content">
 						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/virtualization.svg"></span>
 						<span class="options_list__desc">Для виртуализации</span>
 					</span>
-				</label>
+						</label>
 
-				<label class="options_list__item">
-					<input type="radio" name="server_type">
-					<span class="options_list__content">
+						<label class="options_list__item">
+							<input type="radio" name="server_type">
+							<span class="options_list__content">
 						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/domen.svg"></span>
 						<span class="options_list__desc">Контроллер домена</span>
 					</span>
-				</label>
+						</label>
 
-				<label class="options_list__item">
-					<input type="radio" name="server_type">
-					<span class="options_list__content">
+						<label class="options_list__item">
+							<input type="radio" name="server_type">
+							<span class="options_list__content">
 						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/hosting.svg"></span>
 						<span class="options_list__desc">Для хостинга</span>
 					</span>
-				</label>
+						</label>
+					</div>
+				</div>
 			</div>
 
 			<hr>
-		</div>
-	</form>
+
+			<div class="options_wrapper js-options-block active" data-id="2">
+				<div class="options_toggle">
+					<button class="btn btn--toggle js-options-toggle" data-id="2"></button>
+
+					<h3 class="options_toggle__title js-options-toggle" data-id="2">Производитель</h3>
+
+					<button class="btn btn--question js-popup-show" data-popup="question"></button>
+				</div>
+			</div>
+		</form>
+	</div>
 </section>
 
 <script src="all.min.js?v<?= (date("YmdHis")); ?>"></script>

@@ -58,11 +58,23 @@
 }
 
 .options_toggle {
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 0 50px;
 
 	&__title {
-		margin: 0 0 0 20px;
+		cursor: pointer;
+		margin: 0 20px;
+	}
+}
+
+.options_wrapper {
+	&.active {
+		.options_toggle {
+			.btn--toggle {
+				transform: rotate(180deg);
+			}
+		}
 	}
 }

@@ -1,4 +1,5 @@
 .btn {
+	background: 0 none;
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -19,6 +20,23 @@
 		}
 	}
 
+	&--question {
+		border-radius: 50%;
+		border: 1px solid $c_border;
+		color: $c_border;
+		font-size: 18px;
+		height: 24px;
+		width: 24px;
+
+		&::after {
+			content: "?";
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
 	&--toggle {
 		background-color: rgba(#fff, .05);
 		border-radius: 5px;
@@ -36,12 +54,12 @@
 		}
 
 		&::after {
-			left: 18px;
+			left: 9px;
 			transform: rotate(40deg);
 		}
 
 		&::before {
-			left: 9px;
+			left: 18px;
 			transform: rotate(-40deg);
 		}
 
