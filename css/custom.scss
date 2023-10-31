@@ -16,29 +16,40 @@ body {
 		font-family: $font_roboto;
 		font-size: 20px;
 		line-height: 1;
-		padding: 16px 24px;
+		padding: 18px 24px;
 
 		&:hover {
-			opacity: .7;
+			background-color: #fff;
+			color: $c_primary;
 		}
 	}
 }
 
 .hero {
-	align-items: center;
+	align-items: flex-end;
 	background: linear-gradient(to top, rgba($c_gradient, 0) 0%, $c_gradient 100%);
 	display: flex;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 762px;
+	padding: 0 0 80px;
 	position: relative;
 
 	&__bg {
+		height: 100%;
+		left: 0;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
 	}
 
 	&__content {
 		color: #fff;
 		display: flex;
 		flex-direction: column;
+		position: relative;
+		z-index: 3;
 	}
 
 	&__desc {
@@ -49,6 +60,7 @@ body {
 		max-width: 600px;
 		text-align: center;
 		text-transform: uppercase;
+		margin: 0 0 30px;
 	}
 
 	&__more {
