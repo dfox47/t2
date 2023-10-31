@@ -1,27 +1,31 @@
-$i:                     '/i';
-$icons:                 $i + '/icons';
+$i: '/i';
+$icons: $i + '/icons';
 
 // colors
-$c_type_4:          #454c63;
+$c_gradient: #1d1f26;
+$c_hover: #72d34c;
+$c_primary: #f15c45;
 
-$transition:        all .3s ease-in-out;
+$transition: all .3s ease-in-out;
 
 // @medias
-$desktop:       'only screen and (max-width: 1279px)';
-$mobile:        'only screen and (max-width: 767px)';
-$mobile_s:      'only screen and (max-width: 480px)';
-$tablet:        'only screen and (max-width: 1023px)';
+$desktop: 'only screen and (max-width: 1279px)';
+$mobile: 'only screen and (max-width: 767px)';
+$mobile_s: 'only screen and (max-width: 480px)';
+$tablet: 'only screen and (max-width: 1023px)';
 
 // fonts
 $font_main: 'PT Mono', Arial, Helvetica, sans-serif;
+$font_mono: 'PT Mono', Arial, Helvetica, sans-serif;
+$font_roboto: 'Roboto Mono', Arial, Helvetica, sans-serif;
 
 @font-face {
 	font-family: 'PT Mono';
 	src: local('PT Mono'),
 	local('PTMono-Regular'),
-	url('../fonts/ptmono.woff2') format('woff2'),
-	url('../fontsptmono.woff') format('woff'),
-	url('../fontsptmono.ttf') format('truetype');
+	url('fonts/ptmono.woff2') format('woff2'),
+	url('fonts/ptmono.woff') format('woff'),
+	url('fonts/ptmono.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -30,9 +34,18 @@ $font_main: 'PT Mono', Arial, Helvetica, sans-serif;
 	font-family: 'PT Mono';
 	src: local('PT Mono Bold'),
 	local('PTMono-Bold'),
-	url('../fontsptmonobold.woff2') format('woff2'),
-	url('../fontsptmonobold.woff') format('woff'),
-	url('../fontsptmonobold.ttf') format('truetype');
+	url('fonts/ptmonobold.woff2') format('woff2'),
+	url('fonts/ptmonobold.woff') format('woff'),
+	url('fonts/ptmonobold.ttf') format('truetype');
 	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: local('Roboto Mono'),
+	url('fonts/RobotoMono-Regular.woff2') format('woff2'),
+	url('fonts/RobotoMono-Regular.woff') format('woff');
+	font-weight: 1;
 	font-style: normal;
 }

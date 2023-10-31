@@ -1,0 +1,55 @@
+body {
+	font-family: $font_main;
+	min-height: 2000px;
+}
+
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: $transition;
+
+	&--primary {
+		background-color: $c_primary;
+		border-radius: 5px;
+		color: #fff;
+		font-family: $font_roboto;
+		font-size: 20px;
+		line-height: 1;
+		padding: 16px 24px;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.hero {
+	align-items: center;
+	background: linear-gradient(to top, rgba($c_gradient, 0) 0%, $c_gradient 100%);
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+
+	&__bg {
+	}
+
+	&__desc {
+		font-size: 32px;
+		font-weight: 700;
+		letter-spacing: 0;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	&__more {
+		text-align: center;
+	}
+
+	&__title {
+	}
+}
+
+.logo {
+	margin: 0 auto;
+}
