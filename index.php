@@ -20,6 +20,7 @@ $icons = $i . '/icons'; ?>
 <div class="hero">
 	<span class="logo js-img-scroll" data-src="i/logo.svg"></span>
 
+	<!--	TODO | uncomment-->
 	<!--	<video class="hero__bg" playsinline autoplay muted loop>-->
 	<!--		<source src="i/bg.mp4" type="video/mp4">-->
 	<!--	</video>-->

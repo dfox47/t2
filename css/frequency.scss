@@ -1,5 +1,5 @@
 .frequency {
-	padding: 20px 0 0;
+	padding: 20px 0 80px;
 
 	.ui-slider-handle {
 		border-radius: 50%;
@@ -43,10 +43,19 @@
 
 .frequency_value {
 	color: #fff;
+	display: inline-block;
 	font-family: $font_roboto;
 	font-size: 20px;
 	letter-spacing: 0;
 	line-height: 1.25;
+	padding: 22px 0 0;
+	position: absolute;
+
+	&--from {
+	}
+
+	&--to {
+	}
 
 	span {
 		color: $c_border;
