@@ -47,7 +47,7 @@ $icons = $i . '/icons'; ?>
 <section>
 	<div class="wrapper">
 		<form class="options_form js-form" action="/" method="post">
-			<div class="options_wrapper js-options-block active" data-id="1">
+			<div class="options_wrapper js-options-block activeX" data-id="1">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="1" type="button"></button>
 
@@ -81,7 +81,7 @@ $icons = $i . '/icons'; ?>
 
 			<hr>
 
-			<div class="options_wrapper js-options-block active" data-id="2">
+			<div class="options_wrapper js-options-block activeX" data-id="2">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="2" type="button"></button>
 
@@ -107,7 +107,7 @@ $icons = $i . '/icons'; ?>
 
 			<hr>
 
-			<div class="options_wrapper js-options-block active" data-id="3">
+			<div class="options_wrapper js-options-block activeX" data-id="3">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="3" type="button"></button>
 
@@ -150,7 +150,23 @@ $icons = $i . '/icons'; ?>
 						<div class="frequency_value frequency_value--to js-frequency-to"></div>
 					</div>
 
-					<h4>Количество дисков</h4>
+					<div class="hdd">
+						<h4>Количество дисков</h4>
+
+						<div class="hdd__wrapper">
+							<div class="hdd__slider_wrapper">
+								<div class="hdd__slider js-hdd-slider"></div>
+								<div class="hdd__slider_range hdd__slider_range--from">1 диск</div>
+								<div class="hdd__slider_range hdd__slider_range--to">12 дисков</div>
+							</div>
+
+							<div class="hdd_amount">
+								<input class="hdd_amount__input js-hdd-amount" type="text" readonly>
+								<button class="hdd_amount__plus js-hdd-plus" type="button"></button>
+								<button class="hdd_amount__minus js-hdd-minus" type="button"></button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</form>

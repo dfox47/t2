@@ -1,35 +1,5 @@
 .frequency {
 	padding: 20px 0 80px;
-
-	.ui-slider-handle {
-		border-radius: 50%;
-		border: 10px solid $c_hover;
-		height: 40px;
-		top: -16px;
-		width: 40px;
-
-		&.ui-state-active {
-			background-color: $c_primary;
-		}
-
-		&.ui-state-focus {
-			background-color: $c_primary;
-			border: 10px solid $c_hover;
-		}
-	}
-
-	.ui-slider-horizontal {
-		height: 10px;
-	}
-
-	.ui-slider-range {
-		background-color: $c_hover;
-	}
-
-	.ui-widget-content {
-		background-color: rgba(#fff, .05);
-		border: 0 none;
-	}
 }
 
 .frequency_input {
@@ -52,9 +22,13 @@
 	position: absolute;
 
 	&--from {
+		left: 30px;
+		top: 174px;
 	}
 
 	&--to {
+		left: 757px;
+		top: 174px;
 	}
 
 	span {
