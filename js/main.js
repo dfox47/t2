@@ -10,7 +10,7 @@ const heroFade = () => {
 
 	if (!$fade || !$hero) return
 
-	const fadePercent = window.pageYOffset / $hero.offsetHeight * 1.7
+	const fadePercent = window.pageYOffset / $hero.offsetHeight * 1.5
 
 	if (fadePercent > 1) {
 		return

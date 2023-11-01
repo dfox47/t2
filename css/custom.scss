@@ -7,6 +7,18 @@ button {
 	cursor: pointer;
 }
 
+h2 {
+	@media #{$mobile} {
+		font-size: 24px;
+	}
+}
+
+h3 {
+	@media #{$mobile} {
+		font-size: 20px;
+	}
+}
+
 hr {
 	background-color: rgba(#fff, .1);
 	border: 0 none;
@@ -79,4 +91,8 @@ hr {
 	max-width: 907px;
 	padding: 0 30px;
 	width: 100%;
+
+	@media #{$mobile} {
+		padding: 0 10px;
+	}
 }

@@ -2,6 +2,7 @@
 	background: 0 none;
 	cursor: pointer;
 	display: inline-block;
+	flex-shrink: 0;
 	position: relative;
 	transition: $transition;
 

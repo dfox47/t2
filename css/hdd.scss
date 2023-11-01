@@ -19,8 +19,12 @@
 	}
 
 	&__slider {
-		//max-width: 690px;
+		max-width: 690px;
 		width: 100%;
+
+		@media #{$mobile} {
+			width: 90%;
+		}
 	}
 
 	&__slider_wrapper {
@@ -34,6 +38,10 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 25px 0 50px;
+
+		@media #{$mobile} {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -114,5 +122,9 @@
 			margin: 0 0 0 -1px;
 			transform: rotate(40deg);
 		}
+	}
+
+	@media #{$mobile} {
+		margin: 50px 0 0;
 	}
 }
