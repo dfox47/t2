@@ -138,9 +138,19 @@ $icons = $i . '/icons'; ?>
 				</div>
 
 				<div class="options_content">
-					<h3>Базовая частота</h3>
+					<h4>Базовая частота</h4>
 
-					<h3>Количество дисков</h3>
+					<input class="frequency_input js-frequency-amount" type="text" readonly
+					       style="border:0; color:#f6931f; font-weight:bold;">
+
+					<div class="frequency">
+						<div class="js-frequency-slider"></div>
+
+						<div class="frequency_value frequency_value--from js-frequency-from"></div>
+						<div class="frequency_value frequency_value--to js-frequency-to"></div>
+					</div>
+
+					<h4>Количество дисков</h4>
 				</div>
 			</div>
 		</form>
