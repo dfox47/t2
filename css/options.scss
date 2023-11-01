@@ -122,6 +122,79 @@
 	}
 }
 
+.options_radio {
+	color: $c_border;
+	display: flex;
+	flex-direction: column;
+	font-family: $font_roboto;
+	font-size: 20px;
+	line-height: 1.25;
+
+	input {
+		left: -9999px;
+		position: absolute;
+
+		&:checked,
+		&:hover {
+			+ .options_radio {
+				&__box {
+					border-color: $c_hover;
+				}
+			}
+		}
+
+		&:checked {
+			+ .options_radio {
+				&__box {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&__box {
+		border-radius: 50%;
+		border: 2px solid rgba(#fff, .2);
+		display: block;
+		height: 24px;
+		margin: 0 15px 0 0;
+		position: relative;
+		transition: $transition;
+		width: 24px;
+
+		&::before {
+			background-color: $c_hover;
+			border-radius: 50%;
+			content: "";
+			display: block;
+			height: 12px;
+			left: 50%;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: $transition;
+			width: 12px;
+		}
+	}
+
+	&__desc {
+	}
+
+	&__item {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		margin: 0 0 20px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
 .options_toggle {
 	align-items: center;
 	display: flex;

@@ -110,11 +110,39 @@ $icons = $i . '/icons'; ?>
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="3" type="button"></button>
 
-					<h3 class="options_toggle__title js-options-toggle" data-id="3">тип сервера</h3>
+					<h3 class="options_toggle__title js-options-toggle" data-id="3">Тип сервера</h3>
+				</div>
+
+				<?php $serverTypes = ['1U Rock', '2U Rock', '3U Rock', '4U Rock', '5U Rock', 'Tower', 'Blade']; ?>
+
+				<div class="options_content">
+					<div class="options_radio">
+						<?php foreach ($serverTypes as $serverType) { ?>
+							<label class="options_radio__item">
+								<input type="radio" name="server_type">
+								<span class="options_radio__box"></span>
+								<span class="options_radio__desc"><?= $serverType; ?></span>
+							</label>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
 
-			<div class="options_content"></div>
+			<hr>
+
+			<div class="options_wrapper js-options-block active" data-id="4">
+				<div class="options_toggle">
+					<button class="btn btn--toggle js-options-toggle" data-id="4" type="button"></button>
+
+					<h3 class="options_toggle__title js-options-toggle" data-id="4">Процессор</h3>
+				</div>
+
+				<div class="options_content">
+					<h3>Базовая частота</h3>
+
+					<h3>Количество дисков</h3>
+				</div>
+			</div>
 		</form>
 	</div>
 </section>
