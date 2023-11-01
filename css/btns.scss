@@ -5,6 +5,39 @@
 	position: relative;
 	transition: $transition;
 
+	&--close {
+		height: 30px;
+		position: absolute;
+		right: 26px;
+		top: 26px;
+		width: 30px;
+		z-index: 3;
+
+		&:hover {
+			&::after,
+			&::before {
+				background-color: $c_primary;
+			}
+		}
+
+		&::after,
+		&::before {
+			background-color: $c_border;
+			content: "";
+			height: 1px;
+			left: 1px;
+			position: absolute;
+			top: 14px;
+			transform: rotate(-45deg);
+			transition: $transition;
+			width: 28px;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+	}
+
 	&--primary {
 		background-color: $c_primary;
 		border-radius: 5px;

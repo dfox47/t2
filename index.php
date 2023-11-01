@@ -47,7 +47,7 @@ $icons = $i . '/icons'; ?>
 <section>
 	<div class="wrapper">
 		<form class="options_form js-form" action="/" method="post">
-			<div class="options_wrapper js-options-block activeX" data-id="1">
+			<div class="options_wrapper js-options-block active" data-id="1">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="1" type="button"></button>
 
@@ -81,7 +81,7 @@ $icons = $i . '/icons'; ?>
 
 			<hr>
 
-			<div class="options_wrapper js-options-block activeX" data-id="2">
+			<div class="options_wrapper js-options-block active" data-id="2">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="2" type="button"></button>
 
@@ -107,7 +107,7 @@ $icons = $i . '/icons'; ?>
 
 			<hr>
 
-			<div class="options_wrapper js-options-block activeX" data-id="3">
+			<div class="options_wrapper js-options-block active" data-id="3">
 				<div class="options_toggle">
 					<button class="btn btn--toggle js-options-toggle" data-id="3" type="button"></button>
 
@@ -172,6 +172,29 @@ $icons = $i . '/icons'; ?>
 		</form>
 	</div>
 </section>
+
+<div class="popup js-popup" data-popup="question">
+	<div class="popup__bg js-popup-close"></div>
+
+	<div class="popup__content">
+		<div class="btn btn--close js-popup-close"></div>
+
+		<div class="popup__content_wrap js-popup-content">
+			<h2>Какого производителя выбрать?</h2>
+
+			<p>
+				Серверное оборудование новое или б/у необходимо для технического оснащения офисов и предприятий малого,
+				среднего, крупного бизнеса. Высокопроизводительная техника справляется с широким спектром задач,
+				обеспечивает эффективную работу компании и хранит большой объем необходимых данных.
+			</p>
+
+			<p>
+				Стоимость серверных платформ соответствует техническим характеристикам устройств, поэтому следует
+				внимательно отнестись к выбору конфигурации и заранее определить рамки бюджета.
+			</p>
+		</div>
+	</div>
+</div>
 
 <script src="all.min.js?v<?= (date("YmdHis")); ?>"></script>
 </body>

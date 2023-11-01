@@ -1,0 +1,70 @@
+// popup.js [START]
+const $html = document.getElementsByTagName('html')[0]
+const $popupClose = document.querySelectorAll('.js-popup-close')
+const $popupContent = document.querySelector('.js-popup-content')
+const $popupShow = document.querySelectorAll('.js-popup-show')
+const $popups = document.querySelectorAll('.js-popup')
+
+// show popup
+// example of HTML | <button class="js-popup-show" data-popup="with_content"></button
+$popupShow.forEach((button) => {
+	const popupId = button.dataset.popup
+
+	if (popupId === '') return
+
+	button.addEventListener('click', () => {
+		$popups.forEach((e) => {
+			// show selected popup
+			if (e.dataset.popup === popupId) {
+				e.classList.add('active')
+
+				return
+			}
+
+			// hide all other popups
+			e.classList.remove('active')
+		})
+
+		// add class from html tag
+		$html.classList.add('popup_active')
+	})
+})
+
+// close popup
+$popupClose.forEach((button) => {
+	button.addEventListener('click', () => {
+		$popups.forEach((e) => {
+			// hide all popups
+			e.classList.remove('active')
+
+			// clear popup type
+			e.dataset.type = ''
+
+			// clear popup content
+			// $popupContent.innerHTML = ''
+		})
+
+		// remove class from html tag
+		$html.classList.remove('popup_active')
+	})
+})
+
+// close popup on ESC
+document.addEventListener('keydown', function (event) {
+	if (event.key === 'Escape') {
+		$popups.forEach((e) => {
+			// hide all popups
+			e.classList.remove('active')
+
+			// clear popup type
+			e.dataset.type = ''
+
+			// clear popup content
+			// $popupContent.innerHTML = ''
+		})
+
+		// remove class from html tag
+		$html.classList.remove('popup_active')
+	}
+})
+// popup.js [END]
