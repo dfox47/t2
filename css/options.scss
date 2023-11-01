@@ -1,15 +1,73 @@
+.options_checkbox {
+	color: $c_border;
+	display: flex;
+	flex-direction: column;
+	font-family: $font_roboto;
+	font-size: 20px;
+	line-height: 1.25;
+
+	input {
+		left: -9999px;
+		position: absolute;
+
+		&:checked,
+		&:hover {
+			+ .options_checkbox {
+				&__box {
+					border-color: $c_hover;
+				}
+			}
+		}
+
+		&:checked {
+			+ .options_checkbox {
+				&__box {
+					background: url(i/icons/checkbox.svg) center no-repeat transparent scroll;
+				}
+			}
+		}
+	}
+
+	&__box {
+		border-radius: 4px;
+		border: 2px solid rgba(#fff, .2);
+		display: block;
+		height: 24px;
+		margin: 0 15px 0 0;
+		transition: $transition;
+		width: 24px;
+	}
+
+	&__desc {
+	}
+
+	&__item {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		margin: 0 0 20px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
 .options_content {
+	margin: 0 -30px;
 	max-height: 0;
 	overflow: hidden;
+	padding: 0 30px;
 	position: relative;
 	transition: all .5s ease-in-out;
 }
 
 .options_list {
 	display: flex;
-	gap: 18px;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	font-family: $font_roboto;
+	gap: 18px;
+	justify-content: flex-start;
 
 	input {
 		left: -9999px;
@@ -68,7 +126,6 @@
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 0 50px;
 
 	&__title {
 		cursor: pointer;
@@ -80,6 +137,7 @@
 	&.active {
 		.options_content {
 			max-height: 1000px;
+			padding-top: 50px;
 		}
 
 		.options_toggle {

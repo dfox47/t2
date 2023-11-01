@@ -46,62 +46,34 @@ $icons = $i . '/icons'; ?>
 <section>
 	<div class="wrapper">
 		<form class="options_form js-form" action="/" method="post">
-			<div class="options_wrapper js-options-block" data-id="1">
+			<div class="options_wrapper js-options-block active" data-id="1">
 				<div class="options_toggle">
-					<button class="btn btn--toggle js-options-toggle" data-id="1"></button>
+					<button class="btn btn--toggle js-options-toggle" data-id="1" type="button"></button>
 
 					<h3 class="options_toggle__title js-options-toggle" data-id="1">Выбор сервера под задачу</h3>
 				</div>
 
+				<?php $servers = array(
+					array("Для 1С", "1c"),
+					array("Для офиса", "office"),
+					array("Файловый", "file"),
+					array("Для виртуализации", "virtualization"),
+					array("Контроллер домена", "domen"),
+					array("Для хостинга", "hosting"),
+				); ?>
+
 				<div class="options_content">
 					<div class="options_list">
-						<label class="options_list__item">
-							<input type="radio" name="server_type">
-							<span class="options_list__content">
-						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/1c.svg"></span>
-						<span class="options_list__desc">Для 1С</span>
-					</span>
-						</label>
-
-						<label class="options_list__item">
-							<input type="radio" name="server_type">
-							<span class="options_list__content">
-						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/office.svg"></span>
-						<span class="options_list__desc">Для офиса</span>
-					</span>
-						</label>
-
-						<label class="options_list__item">
-							<input type="radio" name="server_type">
-							<span class="options_list__content">
-						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/file.svg"></span>
-						<span class="options_list__desc">Файловый</span>
-					</span>
-						</label>
-
-						<label class="options_list__item">
-							<input type="radio" name="server_type">
-							<span class="options_list__content">
-						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/virtualization.svg"></span>
-						<span class="options_list__desc">Для виртуализации</span>
-					</span>
-						</label>
-
-						<label class="options_list__item">
-							<input type="radio" name="server_type">
-							<span class="options_list__content">
-						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/domen.svg"></span>
-						<span class="options_list__desc">Контроллер домена</span>
-					</span>
-						</label>
-
-						<label class="options_list__item">
-							<input type="radio" name="server_type">
-							<span class="options_list__content">
-						<span class="options_list__img js-img-bg" data-src="<?= $icons; ?>/hosting.svg"></span>
-						<span class="options_list__desc">Для хостинга</span>
-					</span>
-						</label>
+						<?php foreach ($servers as $server) { ?>
+							<label class="options_list__item">
+								<input type="radio" name="server_type">
+								<span class="options_list__content">
+									<span class="options_list__img js-img-bg"
+									      data-src="<?= $icons; ?>/<?= $server[1]; ?>.svg"></span>
+									<span class="options_list__desc"><?= $server[0]; ?></span>
+								</span>
+							</label>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -110,13 +82,39 @@ $icons = $i . '/icons'; ?>
 
 			<div class="options_wrapper js-options-block active" data-id="2">
 				<div class="options_toggle">
-					<button class="btn btn--toggle js-options-toggle" data-id="2"></button>
+					<button class="btn btn--toggle js-options-toggle" data-id="2" type="button"></button>
 
 					<h3 class="options_toggle__title js-options-toggle" data-id="2">Производитель</h3>
 
-					<button class="btn btn--question js-popup-show" data-popup="question"></button>
+					<button class="btn btn--question js-popup-show" data-popup="question" type="button"></button>
+				</div>
+
+				<?php $brands = ['HP', 'Dell', 'Intel', 'Supermicro', 'Cisco', 'Huawei', 'Asus', 'IBM', 'Lenovo', 'Fujitsu']; ?>
+
+				<div class="options_content">
+					<div class="options_checkbox">
+						<?php foreach ($brands as $brand) { ?>
+							<label class="options_checkbox__item">
+								<input type="checkbox" name="brand">
+								<span class="options_checkbox__box"></span>
+								<span class="options_checkbox__desc"><?= $brand; ?></span>
+							</label>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
+
+			<hr>
+
+			<div class="options_wrapper js-options-block active" data-id="3">
+				<div class="options_toggle">
+					<button class="btn btn--toggle js-options-toggle" data-id="3" type="button"></button>
+
+					<h3 class="options_toggle__title js-options-toggle" data-id="3">тип сервера</h3>
+				</div>
+			</div>
+
+			<div class="options_content"></div>
 		</form>
 	</div>
 </section>
