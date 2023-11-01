@@ -5,10 +5,11 @@
 // should be first
 @import "_defaults";
 @import "_vars";
+@import "jquery-ui";
 
 @import "btns";
+@import "frequency";
 @import "hero";
-@import "jquery-ui";
 @import "options";
 
 // must be the last

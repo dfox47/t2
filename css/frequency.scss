@@ -1,0 +1,54 @@
+.frequency {
+	padding: 20px 0 0;
+
+	.ui-slider-handle {
+		border-radius: 50%;
+		border: 10px solid $c_hover;
+		height: 40px;
+		top: -16px;
+		width: 40px;
+
+		&.ui-state-active {
+			background-color: $c_primary;
+		}
+
+		&.ui-state-focus {
+			background-color: $c_primary;
+			border: 10px solid $c_hover;
+		}
+	}
+
+	.ui-slider-horizontal {
+		height: 10px;
+	}
+
+	.ui-slider-range {
+		background-color: $c_hover;
+	}
+
+	.ui-widget-content {
+		background-color: rgba(#fff, .05);
+		border: 0 none;
+	}
+}
+
+.frequency_input {
+	left: -9999px;
+	position: absolute;
+}
+
+.frequency_slider {
+	margin: 51px 32px 50px 8px;
+}
+
+.frequency_value {
+	color: #fff;
+	font-family: $font_roboto;
+	font-size: 20px;
+	letter-spacing: 0;
+	line-height: 1.25;
+
+	span {
+		color: $c_border;
+	}
+}
