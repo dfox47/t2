@@ -21,15 +21,15 @@
 	&__slider {
 		max-width: 690px;
 		width: 100%;
-
-		@media #{$mobile} {
-			width: 90%;
-		}
 	}
 
 	&__slider_wrapper {
 		position: relative;
 		width: 100%;
+
+		@media #{$mobile} {
+			padding: 0 35px 0 0;
+		}
 	}
 
 	&__wrapper {

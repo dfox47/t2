@@ -30,9 +30,61 @@ hr {
 .content {
 	background-color: $c_bg;
 	margin: 762px 0 0;
+	overflow: hidden;
 	padding: 0 0 100px;
 	position: relative;
 	z-index: 3;
+}
+
+.content_bg {
+	height: 323px;
+	opacity: .5;
+	position: absolute;
+	width: 323px;
+	z-index: 1;
+
+	&--type-1 {
+		background-color: $c_content_bg;
+		filter: blur(197px);
+	}
+
+	&--type-2 {
+		background-color: $c_primary;
+		filter: blur(175px);
+		height: 414px;
+		opacity: .2;
+		width: 414px;
+	}
+
+	&--position-1 {
+		left: -200px;
+		top: 13%;
+	}
+
+	&--position-2 {
+		left: -200px;
+		top: 47%;
+	}
+
+	&--position-3 {
+		left: -200px;
+		top: 92%;
+	}
+
+	&--position-4 {
+		right: -200px;
+		top: 15%;
+	}
+
+	&--position-5 {
+		right: -200px;
+		top: 55%;
+	}
+
+	&--position-6 {
+		right: -200px;
+		top: 85%;
+	}
 }
 
 .config_title {

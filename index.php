@@ -174,6 +174,13 @@ $icons = $i . '/icons'; ?>
 			</form>
 		</div>
 	</section>
+
+	<div class="content_bg content_bg--position-1 content_bg--type-2"></div>
+	<div class="content_bg content_bg--position-2 content_bg--type-1"></div>
+	<div class="content_bg content_bg--position-3 content_bg--type-2"></div>
+	<div class="content_bg content_bg--position-4 content_bg--type-1"></div>
+	<div class="content_bg content_bg--position-5 content_bg--type-2"></div>
+	<div class="content_bg content_bg--position-6 content_bg--type-1"></div>
 </div>
 <div class="popup js-popup" data-popup="question">
 	<div class="popup__bg js-popup-close"></div>
