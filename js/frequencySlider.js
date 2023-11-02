@@ -16,25 +16,53 @@ $(function () {
 			step: 0.1,
 			values: [0, 3.5],
 			slide: function (event, ui) {
+				// minimum range between sliders
+				if (ui.values[0] + 0.15 > ui.values[1]) {
+					return false
+				}
+
 				$amount.val('от ' + ui.values[0] + ' Ghz - до ' + ui.values[1] + ' Ghz')
 
 				setTimeout(() => {
-					if (ui.handleIndex === 0) {
-						$from.html('<span>от</span> ' + ui.values[0] + ' Ghz').position({
-							my: 'left top',
-							at: 'left bottom',
-							of: ui.handle,
+					// unite values if there is no space between them
+					if (ui.values[1] - ui.values[0] < 0.5) {
+						if (ui.values[0] < 2.1) {
+							$to.html('')
+
+							$from.html('<span>от</span> ' + ui.values[0] + ' Ghz <span>до</span> ' + ui.values[1] + ' Ghz').position({
+								my: 'left top',
+								at: 'left bottom',
+								of: $slider.find('.ui-slider-handle:eq(0)'),
+								offset: "0, 10"
+							})
+
+							return false
+						}
+
+						$from.html('')
+
+						$to.html('<span>от</span> ' + ui.values[0] + ' Ghz <span>до</span> ' + ui.values[1] + ' Ghz').position({
+							my: 'right top',
+							at: 'right bottom',
+							of: $slider.find('.ui-slider-handle:eq(1)'),
 							offset: "0, 10"
 						})
 
 						return false
 					}
 
+					$from.html('<span>от</span> ' + ui.values[0] + ' Ghz').position({
+						my: 'left top',
+						at: 'left bottom',
+						of: $slider.find('.ui-slider-handle:eq(0)'),
+						offset: '0, 10'
+					})
+
 					$to.html('<span>до</span> ' + ui.values[1] + ' Ghz').position({
 						my: 'right top',
 						at: 'right bottom',
-						of: ui.handle,
-						offset: "0, 10"
+						of: $slider.find('.ui-slider-handle:eq(1)'),
+						offset: '0, 10'
 					})
 				}, 5)
 			}
